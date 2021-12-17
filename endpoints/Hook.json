@@ -1,0 +1,38 @@
+{
+  "x-enabled": {
+    "enabled": true
+  },
+  "swagger": "2.0",
+  "info": {
+    "description": "Resource hook listener for AssetRequest provisioning.",
+    "version": "1.0.0",
+    "title": "AssetRequestResourceHook"
+  },
+  "paths": {
+    "/hook": {
+      "post": {
+        "description": "Hook called by Amplify Central when provisioning AssetRequests.",
+        "operationId": "AssetRequestHook",
+        "parameters": [],
+        "produces": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {}
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {}
+          }
+        },
+        "summary": "Provision an AssetRequest.",
+        "tags": [
+          "amplify",
+          "assetrequest",
+          "provision"
+        ],
+        "x-flow": "Hook-AssetRequestHook"
+      }
+    }
+  }
+}
